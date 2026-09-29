@@ -187,4 +187,27 @@
   max-height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  margin: 8px 0;
+}
+
+.tweetsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+article {
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+article div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
 }

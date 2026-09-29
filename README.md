@@ -62,7 +62,7 @@ Programmation Web - L3 MIASHS - 2026 / 2027
 
 ### TD 01 - Déclaration d'usage de l'IA générative
 
-- **à compléter**
+Usage de l'ia pour m'aider à styiliser l'apparence des tweets, afin qu'ils ne soient pas tous collés et sans formes.
 
 ## TD 02
 

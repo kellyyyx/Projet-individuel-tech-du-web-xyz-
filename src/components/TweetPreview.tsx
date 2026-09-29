@@ -1,5 +1,6 @@
 import type { Tweet } from "../types/Tweet";
 import React from 'react';
+import "../App.css";
 
 type TweetPreviewProps = {
   tweet: Tweet;
@@ -12,7 +13,7 @@ export const TweetPreview =  ({ tweet }: TweetPreviewProps): React.ReactNode => 
         <article>
             <div>
                 <strong>{tweet.authorName}</strong>
-                
+
                 <span>@{tweet.authorHandle}</span>
 
                 <span> - {formattedDate}</span>
