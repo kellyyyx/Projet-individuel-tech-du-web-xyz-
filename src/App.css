@@ -211,3 +211,15 @@ article div {
   align-items: center;
   margin-bottom: 8px;
 }
+
+button {
+  background-color: #1d9bf0; 
+  color: white;              
+  border: none;
+  padding: 6px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
