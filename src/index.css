@@ -109,3 +109,9 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.lienDiscussion {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}

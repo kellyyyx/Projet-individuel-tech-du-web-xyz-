@@ -63,6 +63,7 @@ Programmation Web - L3 MIASHS - 2026 / 2027
 ### TD 01 - Déclaration d'usage de l'IA générative
 
 Usage de l'ia pour m'aider à styiliser l'apparence des tweets, afin qu'ils ne soient pas tous collés et sans formes.
+Usage également pour m'aider à comprendre si je ne comprends pas une question ou une méthode à utiliser.
 
 ## TD 02
 
@@ -80,7 +81,7 @@ Usage de l'ia pour m'aider à styiliser l'apparence des tweets, afin qu'ils ne s
 
 ### TD 02 - Difficultés rencontrées + Solutions appliquées
 
-- **à compléter**
+Après avoir réalisé les 3 premiers points du td, ma page était blanche et n'affichait plus les tweets. J'ai cherché l'erreur pendant longtemps mais je ne trouvais pas, j'ai même demandé de l'aide à l'ia pour me dire où était mon erreur mais rien n'a marché. Au final je pense que c'était un problème d'indentation dans TweetsMasterPage puisque une fois que j'ai bien indenté mon code la page s'est re mise à s'afficher avec mes tweets.
 
 ### TD 02 - Déclaration d'usage de l'IA générative
 

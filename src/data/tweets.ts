@@ -67,7 +67,7 @@ export const tweets: Array<Tweet> = [
         createdAt: "2018-04-02T13:14:00.000Z",
     },
     {
-        id: "",
+        id: "ab2f87e4-6ea4-46a4-82e5-75f1894ac41b",
         authorName :"Nathalie Damo",
         authorHandle: "NDamo",
         content: "Je monte dans lascenseur et ce chien était juste là dedans tout seul ???",
@@ -78,7 +78,7 @@ export const tweets: Array<Tweet> = [
         createdAt: "2018-04-05T13:14:00.000Z",
     },
     {
-        id: "",
+        id: "297b391f-7d71-493a-8a67-deab7fe2027e",
         authorName :"Julie Ladu",
         authorHandle: "JLadu",
         content: "je peux choisir un sport à la fac j'hésite entre pilates et mma",
