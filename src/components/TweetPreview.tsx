@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 
 type TweetPreviewProps = {
  tweet: Tweet;
+ linkToDetail?: boolean;
 };
 
 
-export const TweetPreview =  ({ tweet }: TweetPreviewProps): React.ReactNode => {
+export const TweetPreview =  ({ tweet, linkToDetail = true }: TweetPreviewProps): React.ReactNode => {
    const [ContenuDeplie, setContenuDeplie] = useState(false);
 
 
@@ -42,15 +43,17 @@ export const TweetPreview =  ({ tweet }: TweetPreviewProps): React.ReactNode => 
 
            </div>
            {tweet.image && (
-               <Link to={`/tweets/${tweet.id}`}>
-                   <img
-                       src = {tweet.image.url}
-                       alt = {tweet.image.alt}
-                       className="tweetImage"
-                   />
-               </Link>
-
-
+                linkToDetail ? (
+                    <Link to={`/tweets/${tweet.id}`}>
+                        <img
+                            src = {tweet.image.url}
+                            alt = {tweet.image.alt}
+                            className="tweetImage"
+                        />
+                    </Link>
+                ) : (
+                    <img src={tweet.image.url} alt={tweet.image.alt} />
+                )
            )}
 
 
@@ -62,9 +65,14 @@ export const TweetPreview =  ({ tweet }: TweetPreviewProps): React.ReactNode => 
                    {ContenuDeplie ? "Voir moins" : "Voir plus"}
                </button>
            )}
-           <div className="lienDiscussion">
-               <Link to={`/tweets/${tweet.id}`}> Voir la discussion </Link>
-           </div>
+
+           {linkToDetail && (
+                <div className="lienDiscussion">
+                    <Link to={`/tweets/${tweet.id}`}> Voir la discussion </Link>
+                </div>
+
+           )}
+           
        </article>
    );
 };

@@ -8,6 +8,7 @@ export const tweets: Array<Tweet> = [
         authorHandle: "JSirat",
         content: "Ma soeur est pâtissière elle voulait pas me faire de gâteau du coup j'ai commandé chez elle avec un faux compte jss aller le chercher, elle pensait que le client avait annulé le soir j'ai été chez elle et j'ai mangé le gâteau",
         createdAt: "2024-06-02T09:12:00.000Z",
+        parentId: "1",
     },
     {
         id: "7c9e6679-7425-40de-944b-e07fc1f90ae7",
@@ -33,6 +34,7 @@ export const tweets: Array<Tweet> = [
         authorHandle: "MAvede",
         content: "J'ai demandé à mon shab pk il notait pas le cours il m'a dit Jsuis TDAH",
         createdAt: "2024-08-02T13:14:00.000Z",
+        parentId: "2",
     },
     {
         id: "b54d51a0-8c77-468e-8112-0e2cb49c1c7e",

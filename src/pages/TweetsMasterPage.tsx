@@ -4,10 +4,13 @@ import { TweetList } from '../components/TweetsList';
 
 
 export const TweetsMasterPage = (): React.ReactNode => {
+
+    const TweetsPremierNiveau = tweets.filter(tweet => !tweet.parentId);
+
     return (
         <main>
             <h1>Fil d'actualité</h1>
-            <TweetList tweets={tweets}/>
+            <TweetList tweets={TweetsPremierNiveau}/>
         </main>
     );
 };
