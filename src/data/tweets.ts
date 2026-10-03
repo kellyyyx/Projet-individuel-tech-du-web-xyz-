@@ -8,7 +8,8 @@ export const tweets: Array<Tweet> = [
         authorHandle: "JSirat",
         content: "Ma soeur est pâtissière elle voulait pas me faire de gâteau du coup j'ai commandé chez elle avec un faux compte jss aller le chercher, elle pensait que le client avait annulé le soir j'ai été chez elle et j'ai mangé le gâteau",
         createdAt: "2024-06-02T09:12:00.000Z",
-        parentId: "1",
+        likes: 293,
+        likedByMe: false,
     },
     {
         id: "7c9e6679-7425-40de-944b-e07fc1f90ae7",
@@ -16,6 +17,8 @@ export const tweets: Array<Tweet> = [
         authorHandle: "Lfare",
         content:"Mon père est tendue car mon grand-père (96 ans) veut grimper des arbres pour cueillir des figues",
         createdAt: "2023-08-02T13:14:00.000Z",
+        likes: 5223,
+        likedByMe: true,
     },
     {
         id: "3f2504e0-4f89-41d3-9a0c-0305e82c3301",
@@ -27,6 +30,8 @@ export const tweets: Array<Tweet> = [
             alt: "Peinture d'Ada Lovelace",
         },
         createdAt: "2022-02-05T12:23:00.000Z",
+        likes: 529,
+        likedByMe: true,
     },
     {
         id: "6e68c7e3-f003-49c6-8496-dd27f0ea9220",
@@ -34,14 +39,17 @@ export const tweets: Array<Tweet> = [
         authorHandle: "MAvede",
         content: "J'ai demandé à mon shab pk il notait pas le cours il m'a dit Jsuis TDAH",
         createdAt: "2024-08-02T13:14:00.000Z",
-        parentId: "2",
+        likes: 5293,
+        likedByMe: true,
     },
     {
         id: "b54d51a0-8c77-468e-8112-0e2cb49c1c7e",
         authorName :"Maina Viko",
         authorHandle: "MViko",
         content: "Le chauffeur de bus a sauté les arrêts qui ont pas de buzz je l’ai remercié",
-        createdAt: "2021-08-02T13:14:00.000Z",
+        createdAt: "2026-08-02T13:14:00.000Z",
+        likes: 230,
+        likedByMe: false,
     },
     {
         id: "85f8ddd5-7337-4a4a-bf77-20aff05e407d",
@@ -49,6 +57,8 @@ export const tweets: Array<Tweet> = [
         authorHandle: "ABolor",
         content: "je viens de sauver ma bouteille d'huile d'olive qui allait tomber (8,13$)",
         createdAt: "2020-08-02T13:14:00.000Z",
+        likes: 493,
+        likedByMe: false,
     },
     {
         id: "dc496999-0fe9-4e12-8eea-8f2fdab378d2",
@@ -56,6 +66,8 @@ export const tweets: Array<Tweet> = [
         authorHandle: "VScocra",
         content: "J'ai dit au kebab 'Comme hier chef' il m'a demandé 't'es qui ?'",
         createdAt: "2019-03-02T13:14:00.000Z",
+        likes: 430,
+        likedByMe: true,
     },
     {
         id: "3b1d0b4d-937a-4a10-ab9f-1887b4ef1ce4",
@@ -67,6 +79,8 @@ export const tweets: Array<Tweet> = [
             alt: "Photographie de Grace Hopper",
         },
         createdAt: "2018-04-02T13:14:00.000Z",
+        likes: 129,
+        likedByMe: true,
     },
     {
         id: "ab2f87e4-6ea4-46a4-82e5-75f1894ac41b",
@@ -78,6 +92,8 @@ export const tweets: Array<Tweet> = [
             alt: "image d'un chiot golden retriever",
         },
         createdAt: "2018-04-05T13:14:00.000Z",
+        likes: 5,
+        likedByMe: false,
     },
     {
         id: "297b391f-7d71-493a-8a67-deab7fe2027e",
@@ -85,6 +101,29 @@ export const tweets: Array<Tweet> = [
         authorHandle: "JLadu",
         content: "je peux choisir un sport à la fac j'hésite entre pilates et mma",
         createdAt: "2026-09-15T13:14:00.000Z",
+        likes: 320,
+        likedByMe: true,
     },
+
+    {
+        id: "556e8400-e29b-41a4-a716-446655440000", 
+        authorName: "Kelly",
+        authorHandle: "kelly8",
+        createdAt: "2026-09-15T13:18:00.000Z",
+        content: "perso j'ai pris les 2",
+        parentId: "297b391f-7d71-493a-8a67-deab7fe2027e", 
+        likes: 128,
+        likedByMe: true,
+    },
+    {
+        id: "6e68c7e3-f003-49c6-8496-dd27f0ea9228",
+        authorName: "Joudia",
+        authorHandle: "Joudia7",
+        createdAt: "2024-08-02T13:14:30.000Z",
+        content: "PTDRRR on va jamais avancer",
+        parentId: "6e68c7e3-f003-49c6-8496-dd27f0ea9220",
+        likes: 564,
+        likedByMe: true,  
+    }
 
 ]

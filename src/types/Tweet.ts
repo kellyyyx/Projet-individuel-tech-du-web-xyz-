@@ -8,5 +8,7 @@ export type Tweet = {
     image? : TweetImage,
     createdAt: string,
     parentId?: string,
+    likes: number,
+    likedByMe: boolean,
 
 };
