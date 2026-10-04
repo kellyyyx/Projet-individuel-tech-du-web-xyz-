@@ -120,6 +120,45 @@ export const tweets: Array<Tweet> = [
         parentId: "6e68c7e3-f003-49c6-8496-dd27f0ea9220",
         likes: 564,
         likedByMe: true,  
-    }
+    },
+
+    {
+        id: "51089b35-afee-41a5-8ac7-0d4dc934ee0e",
+        authorName: "zoé",
+        authorHandle: "zozo7",
+        createdAt: "2026-10-02T13:14:30.000Z",
+        content: "on est le pays de la révolution et notre hymne commence par 'aux armes citoyens' et vous êtes choqué qu'on prenne les armes pour faire la révolution ",
+        likes: 6588,
+        likedByMe: true,  
+    },
+    {
+        id: "c615e76c-d756-4a7c-9788-8712f7772e96",
+        authorName: "Camille",
+        authorHandle: "K1000Journalist",
+        createdAt: "2026-10-02T13:14:30.000Z",
+        content: "Vous pouvez prendre le problème dans le sens que vous voulez, la conclusion reste la même : ça fait des années que les profs et les lycées dénoncent leurs mauvaises conditions d'études. Mais on les entend aujourd'hui uniquement car ils bloquent leurs lycées et brûlent des trucs",
+        likes: 812,
+        likedByMe: true,  
+    },
+    {
+        id: "e08c3498-a7b0-4825-9a45-698f05f377f1",
+        authorName: "Quentin",
+        authorHandle: "LeChiffre",
+        createdAt: "2026-10-02T13:14:30.000Z",
+        content: "'Ils peuvent exprimer leur mécontentement mais sans bloquer et sans casser'. C'est ce qu'ils font depuis des années sans être écoutés.",
+        parentId: "c615e76c-d756-4a7c-9788-8712f7772e96",
+        likes: 213,
+        likedByMe: true,  
+    },
+
+    {
+        id: "95f4167b-eeaf-4942-926a-6aeb187eae1c",
+        authorName: "Kailani",
+        authorHandle: "Kaila78",
+        createdAt: "2026-10-02T13:14:30.000Z",
+        content: "Tout le monde qui bloque sur le '8h-18h' alors que les revendications principales concernent l'état précaire des lycées et l'absence des profs",
+        likes: 20200,
+        likedByMe: true,  
+    },
 
 ]
