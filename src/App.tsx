@@ -57,11 +57,19 @@ export const App = (): React.ReactNode => {
     const context: TweetsContextValue = { tweets, addTweet, toggleLike };
 
     return (
+      <>
+        <header className="header" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          <img src="/favicon-96x96.png" alt="logo de l'application XYZ" width="45"/>
+
+          <h2 style={{ margin: 0 }}>XYZ</h2>
+        </header>
+
         <main>
             <TweetsContext.Provider value={context}>
                 <Outlet />
             </TweetsContext.Provider>
         </main>
+      </>
     );
 };
 

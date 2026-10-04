@@ -213,7 +213,7 @@ article div {
 }
 
 button {
-  background-color: #1d9bf0; 
+  background-color: #e8c6cc; 
   color: white;              
   border: none;
   padding: 6px 12px;
@@ -222,4 +222,36 @@ button {
   font-weight: bold;
   margin-top: 8px;
 }
+body {
+  background-color: #e6e6e6;
+  color: (#000000);
+}
 
+header h2 {
+  color: #000000;
+}
+
+
+textarea, input {
+  background-color: #e8c6cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+main {
+  color: #333333;
+}
+
+textarea::placeholder, input::placeholder {
+  color: #000000;
+}
+
+textarea, input {
+  color: #000000;
+}
+
+main h1, main h2 {
+  color: #333333; 
+}

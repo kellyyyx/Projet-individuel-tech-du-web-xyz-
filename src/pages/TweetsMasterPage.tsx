@@ -9,7 +9,7 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export const TweetsMasterPage = (): React.ReactNode => {
 
-    //utilisation inconditionnelle avec Accueil comme demandé pour TweetsMasterPage
+    //utilisation inconditionnelle avec le titre : Accueil comme demandé pour TweetsMasterPage
     useDocumentTitle("Accueil");
 
     const { tweets, addTweet, toggleLike } = useContext(TweetsContext)!;
@@ -22,7 +22,7 @@ export const TweetsMasterPage = (): React.ReactNode => {
     return (
         <main>
             <h1>Fil d'actualité</h1>
-            <p> Total des J'aime des tweets du fil : {totalLikes}</p>
+            <p> {totalLikes} mentions j'aime</p>
             <TweetForm onSubmit={addTweet} />
             <TweetList tweets={TweetsPremierNiveau} onToggleLike={toggleLike}/>
         </main>
