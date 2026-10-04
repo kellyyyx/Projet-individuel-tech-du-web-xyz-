@@ -4,10 +4,16 @@ import { TweetList } from '../components/TweetsList';
 
 import { TweetForm } from '../components/TweetForm';
 
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
+
 
 export const TweetsMasterPage = (): React.ReactNode => {
 
+    //utilisation inconditionnelle avec Accueil comme demandé pour TweetsMasterPage
+    useDocumentTitle("Accueil");
+
     const { tweets, addTweet, toggleLike } = useContext(TweetsContext)!;
+
     const TweetsPremierNiveau = tweets.filter(tweet => !tweet.parentId);
 
     //afin de pouvoir compter le nombre total de likes des tweets du fil, on va prendre le total qui commence à 0 et y rajouter le nombre de likes de chaque tweets

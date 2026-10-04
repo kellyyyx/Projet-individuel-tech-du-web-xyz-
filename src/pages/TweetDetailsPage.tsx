@@ -4,6 +4,7 @@ import { TweetsContext } from '../contexts/TweetsContext';
 import { TweetPreview } from '../components/TweetPreview';
 import { TweetList } from '../components/TweetsList';
 
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export const TweetDetailsPage = (): React.ReactNode => {
     //récupération de l'id avec useParams
@@ -13,6 +14,11 @@ export const TweetDetailsPage = (): React.ReactNode => {
 
     // Recherche du tweet avec son id 
     const tweetPrincipal = tweets.find((tweet) => tweet.id === id);
+
+    //le titre de la page est soit Tweet de <auteur> si on a trouvé le tweet sinon on mets Tweet introuvable si on l'a pas trouvé
+    const titrePage = tweetPrincipal ? `Tweet de ${tweetPrincipal.authorName}`: "Tweet introuvable";
+
+    useDocumentTitle(titrePage);
 
     if (!tweetPrincipal) {
         return (
