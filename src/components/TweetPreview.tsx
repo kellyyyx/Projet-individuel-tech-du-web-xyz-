@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom';
 type TweetPreviewProps = {
  tweet: Tweet;
  linkToDetail?: boolean;
+ onToggleLike: (id: string) => void;
 };
 
 
-export const TweetPreview =  ({ tweet, linkToDetail = true }: TweetPreviewProps): React.ReactNode => {
+export const TweetPreview =  ({ tweet, linkToDetail = true, onToggleLike }: TweetPreviewProps): React.ReactNode => {
    const [ContenuDeplie, setContenuDeplie] = useState(false);
 
 
@@ -72,6 +73,12 @@ export const TweetPreview =  ({ tweet, linkToDetail = true }: TweetPreviewProps)
                 </div>
 
            )}
+
+           <button onClick={() => onToggleLike(tweet.id)}>
+                {tweet.likedByMe ? "Je n'aime plus" : "J'aime"}
+
+                {" "} ({tweet.likes})
+           </button>
            
        </article>
    );

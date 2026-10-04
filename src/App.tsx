@@ -29,11 +29,32 @@ export const App = (): React.ReactNode => {
       //On vient utiliser setTweets. "anciensTweets" représente la liste actuelle de tweets, on va venir y verser le contenu des anciens tweets sans muter le tableau existant
       //Ici, nouveauTweet (le tweet qui vient d'être publié) apparaîtra en haut du tableau
       setTweets((anciensTweets) => [nouveauTweet, ...anciensTweets]);
-
     }
 
+    const toggleLike = (id: string): void => {
+      setTweets((anciensTweets) =>
+        //à partir de l'état précédent, on produit un nouveau tableau avec map
+        anciensTweets.map((tweet) => {
 
-    const context: TweetsContextValue = { tweets, addTweet };
+          if (tweet.id === id) {
+
+            return {
+
+              ...tweet,
+              //inversion de likedByMe
+              likedByMe: !tweet.likedByMe,
+              //incrémenté si le tweet n'est pas déjà liké, on décrémente si le tweet a déjà été liké (donc qu'on veut enlever notre like)
+              likes: tweet.likedByMe ? tweet.likes -1 : tweet.likes + 1,
+            };
+          }
+          //on retourne toujours les autres tweets, qui sont conservés sans modification
+          return tweet;
+        })
+      );
+    };
+
+
+    const context: TweetsContextValue = { tweets, addTweet, toggleLike };
 
     return (
         <main>

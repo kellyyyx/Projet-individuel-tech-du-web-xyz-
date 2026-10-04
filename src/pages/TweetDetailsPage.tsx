@@ -9,7 +9,7 @@ export const TweetDetailsPage = (): React.ReactNode => {
     //récupération de l'id avec useParams
     const { id } = useParams<{ id: string }>();
     
-    const { tweets } = useContext(TweetsContext)!;
+    const { tweets, toggleLike } = useContext(TweetsContext)!;
 
     // Recherche du tweet avec son id 
     const tweetPrincipal = tweets.find((tweet) => tweet.id === id);
@@ -28,12 +28,13 @@ export const TweetDetailsPage = (): React.ReactNode => {
 
     return (
         <main>
-            <TweetPreview tweet={tweetPrincipal} linkToDetail={false} />
+            <TweetPreview tweet={tweetPrincipal} linkToDetail={false} onToggleLike={toggleLike} />
 
             <h3> Réponse : </h3>
 
             {reponses.length > 0 ? (
-                <TweetList tweets={reponses} />
+                <TweetList tweets={reponses}
+                onToggleLike={toggleLike} />
             ) : (
                 <p> Aucune réponse pour ce tweet </p>
             )}    
