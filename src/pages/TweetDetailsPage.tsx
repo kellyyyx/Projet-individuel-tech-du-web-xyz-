@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { tweets } from '../data/tweets';
+import { TweetsContext } from '../contexts/TweetsContext';
 import { TweetPreview } from '../components/TweetPreview';
 import { TweetList } from '../components/TweetsList';
 
@@ -8,6 +8,8 @@ import { TweetList } from '../components/TweetsList';
 export const TweetDetailsPage = (): React.ReactNode => {
     //récupération de l'id avec useParams
     const { id } = useParams<{ id: string }>();
+    
+    const { tweets } = useContext(TweetsContext)!;
 
     // Recherche du tweet avec son id 
     const tweetPrincipal = tweets.find((tweet) => tweet.id === id);

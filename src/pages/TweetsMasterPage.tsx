@@ -1,10 +1,11 @@
-import React from 'react';
-import { tweets } from '../data/tweets';
+import React, { useContext} from 'react';
+import { TweetsContext } from '../contexts/TweetsContext';
 import { TweetList } from '../components/TweetsList';
 
 
 export const TweetsMasterPage = (): React.ReactNode => {
 
+    const { tweets } = useContext(TweetsContext)!;
     const TweetsPremierNiveau = tweets.filter(tweet => !tweet.parentId);
 
     return (
