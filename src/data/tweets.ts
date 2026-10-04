@@ -75,7 +75,7 @@ export const tweets: Array<Tweet> = [
         authorHandle: "LMacor",
         content: "Une pionnière de l’informatique qui a contribué au développement de COBOL et popularisé l’idée des compilateurs. Son travail a profondément marqué l’histoire de la programmation",
         image: {
-            url: "ps://upload.wikimedia.org/wikipedia/commons/5/55/Grace_Hopper.jpg",
+            url: "https://edu-html.ac-versailles.fr/lyc-rabelais-meudon/AngelaCelinePersonnages/Grace.jpeg",
             alt: "Photographie de Grace Hopper",
         },
         createdAt: "2018-04-02T13:14:00.000Z",
@@ -86,11 +86,7 @@ export const tweets: Array<Tweet> = [
         id: "ab2f87e4-6ea4-46a4-82e5-75f1894ac41b",
         authorName :"Nathalie Damo",
         authorHandle: "NDamo",
-        content: "Je monte dans lascenseur et ce chien était juste là dedans tout seul ???",
-        image: {
-            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixm76Gkmngh79gzzMZEedw6RmOnxv9LO8hYDf73mI-Q&s=10",
-            alt: "image d'un chiot golden retriever",
-        },
+        content: "J'ai voulu faire le nonchalant à pas courir pour prendre le bus j'ai regardé le prochain il passe dans 1h",
         createdAt: "2018-04-05T13:14:00.000Z",
         likes: 5,
         likedByMe: false,
