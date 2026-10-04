@@ -5,7 +5,7 @@ export const useDocumentTitle = (title: string): void => {
     //utilisation de useEffect pour affecter à document.title une valeur de la forme Accueil | XYZ
     useEffect(() => {
         //title afin que l'effet se rejoue lorsque le titre change
-        document.title = `${title} | X`;
+        document.title = `${title} | XYZ`;
 
     }, [title]);
 };
